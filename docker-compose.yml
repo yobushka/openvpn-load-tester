@@ -1,0 +1,6 @@
+version: "3"
+
+services:
+  yoba:
+    image: yoba
+    privileged: yes
