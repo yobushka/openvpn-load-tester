@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /config
 COPY . /config
 WORKDIR /config
-CMD [ "/usr/sbin/openvpn","--verb","6","--config","vpn.conf","--auth-user-pass","password" ]
+CMD [ "/usr/sbin/openvpn","--verb","6","--config","vpn.conf","--auth-user-pass","password","--up","up.sh" ]
