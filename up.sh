@@ -1,3 +1,3 @@
 #!/bin/bash
-( sleep 2 ; /sbin/dhclient tap0 ) &
+( sleep 10 ; /sbin/dhclient tap0 ) &
 exit 0
